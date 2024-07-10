@@ -5,9 +5,9 @@
       "lastName": "Bunjian",
       "email": "team@gmail.com",
       "dateOfBirth": "1999-09-21",
-      "password": "SAS1222",
+      "password": "12345",
       "address": "Begonia",
-      "UID": "1"
+      "uid": "1"
     },
     {
       "firstName": "Phat",
@@ -16,7 +16,7 @@
       "dateOfBirth": "2000-02-19",
       "password": "kirby",
       "address": "Begonia house",
-      "UID": "2"
+      "uid": "2"
     },
     {
       "firstName": "Admin",
@@ -25,7 +25,16 @@
       "dateOfBirth": "1999-09-21",
       "password": "12345",
       "address": "Admin",
-      "UID": "0"
+      "uid": "0"
+    },
+    {
+      "firstName": "Nuttawud",
+      "lastName": "Injan",
+      "email": "Valo@gmail.com",
+      "dateOfBirth": "1899-08-21",
+      "password": "12345",
+      "address": "sdkmdosmdosdisdsd",
+      "uid": "4186f5be-7996-4131-94a3-2e8307c10347"
     }
   ]
 }

@@ -10,6 +10,8 @@ export const ErrorCodes = {
   UploadImageMapError: 'upload_imagemap_error',
   GetFileError: 'get_file_error',
   LineError: 'line_error',
+  PasswordNotMatch: 'password_not_match',
+  BadRequest: 'bad_request_error',
 }
 
 export const UploadImageExtensions = ['jpg', 'jpeg', 'png', 'gif']
