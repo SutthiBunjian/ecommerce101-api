@@ -10,9 +10,16 @@ let data: { Users: User[] } = { Users: [] }
 
 const loadData = () => {
   try {
-    data = readJSONFile(userDataPath)
+    const loadedData = readJSONFile(userDataPath)
+    if (!loadedData || !loadedData.Orders) {
+      data = { Users: [] }
+    } else {
+      data = loadedData
+    }
   } catch (err) {
     console.error(`Error loading data: ${err}`)
+    data = { Users: [] }
+    throw new RequestError(ErrorCodes.BadRequest, `Invalid DataPath`)
   }
 }
 
@@ -32,6 +39,7 @@ export const login = async (username: string, password: string) => {
   if (user) {
     if (user.password === password) {
       console.log('Correct log-in info')
+
       const result = {
         firstName: user.firstName,
         lastName: user.lastName,
