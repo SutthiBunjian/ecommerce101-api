@@ -101,7 +101,7 @@ export const register = async (
       lastName,
       email,
       dateOfBirth,
-      address,
+
       uid,
     }
 
