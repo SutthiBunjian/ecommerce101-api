@@ -35,6 +35,15 @@
       "password": "12345",
       "address": "sdkmdosmdosdisdsd",
       "uid": "4186f5be-7996-4131-94a3-2e8307c10347"
+    },
+    {
+      "firstName": "HI",
+      "lastName": "HI",
+      "email": "hi@gmail.com",
+      "dateOfBirth": "1999-09-21",
+      "password": "12345",
+      "address": "wsadasdasdaadd",
+      "uid": "3bd0ea52-56ae-4e08-b6ea-6d19be27497e"
     }
   ]
 }

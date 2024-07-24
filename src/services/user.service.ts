@@ -11,7 +11,7 @@ let data: { Users: User[] } = { Users: [] }
 const loadData = () => {
   try {
     const loadedData = readJSONFile(userDataPath)
-    if (!loadedData || !loadedData.Orders) {
+    if (!loadedData || !loadedData.Users) {
       data = { Users: [] }
     } else {
       data = loadedData
@@ -32,6 +32,7 @@ export const login = async (username: string, password: string) => {
   }
 
   loadData()
+  console.log(data)
   const user = data.Users.find(
     (user) => user.email.toLowerCase() === username.toLowerCase(),
   )
@@ -45,7 +46,6 @@ export const login = async (username: string, password: string) => {
         lastName: user.lastName,
         email: user.email,
         dateOfBirth: user.dateOfBirth,
-        address: user.address,
         uid: user.uid,
       }
 
