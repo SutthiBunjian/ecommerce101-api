@@ -2,9 +2,9 @@ import { RequestError } from '../errors'
 import { readJSONFile, writeUserDataToJSONFile } from '../utils/common'
 import { User } from 'type/User'
 import { ErrorCodes } from '../utils/constants'
+import * as path from 'path'
 
-const userDataPath =
-  '/Users/prdi/Workspace/ecommerce101/ecommerce101-api/src/data/Users.Json'
+const userDataPath = path.join(__dirname, '..', 'data', 'users.json')
 
 let data: { Users: User[] } = { Users: [] }
 

@@ -6,9 +6,9 @@ import {
 } from '../utils/common'
 import { RequestError } from '../errors'
 import { ErrorCodes } from '../utils/constants'
+import * as path from 'path'
 
-const orderDataPath =
-  '/Users/prdi/Workspace/ecommerce101/ecommerce101-api/src/data/Orders.Json'
+const orderDataPath = path.join(__dirname, '..', 'data', 'orders.json')
 
 let data: { Orders: Order[] } = { Orders: [] }
 
