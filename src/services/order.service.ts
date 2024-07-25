@@ -6,9 +6,8 @@ import {
 } from '../utils/common'
 import { RequestError } from '../errors'
 import { ErrorCodes } from '../utils/constants'
-import * as path from 'path'
 
-const orderDataPath = path.join(__dirname, '..', 'data', 'orders.json')
+const orderDataPath = 'orders.json'
 
 let data: { Orders: Order[] } = { Orders: [] }
 

@@ -2,9 +2,8 @@ import { RequestError } from '../errors'
 import { readJSONFile, writeUserDataToJSONFile } from '../utils/common'
 import { User } from 'type/User'
 import { ErrorCodes } from '../utils/constants'
-import * as path from 'path'
 
-const userDataPath = path.join(__dirname, '..', 'data', 'users.json')
+const userDataPath = 'users.json'
 
 let data: { Users: User[] } = { Users: [] }
 
