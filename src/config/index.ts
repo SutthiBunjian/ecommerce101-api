@@ -11,7 +11,7 @@ export default {
     port: Number(process.env.PORT) || 3000,
   },
   line: {
-    channelId: '2005529727',
-    channelSecret: 'eacd5b5b340750caa2250855683654c5',
+    channelId: '',
+    channelSecret: '',
   },
 }
