@@ -46,6 +46,9 @@ export const insertOrder = async (order: Order) => {
 const findOrderbyOrderNumber = (orderNumber: number) => {
   return data.Orders.find((order) => order.ordernumber === orderNumber)
 }
+const findOrderbyUID = (uid: string): Order[] => {
+  return data.Orders.filter((order) => order.uid === uid)
+}
 const findProductbyId = (productId: number, order: Order) => {
   return order.products.find((product) => product.id === productId)
 }
@@ -92,4 +95,19 @@ export const deleteOrder = async (ordernumber: number) => {
       `User with uid: ${ordernumber} not found.`,
     )
   }
+}
+export const getAllOrders = () => {
+  loadData()
+  return data.Orders
+}
+export const getOrdersByUID = (uid: string): Order[] => {
+  loadData()
+  const orders = findOrderbyUID(uid)
+  if (!orders.length) {
+    throw new RequestError(
+      ErrorCodes.NotFound,
+      `No orders found for user with ID: ${uid}`,
+    )
+  }
+  return orders
 }

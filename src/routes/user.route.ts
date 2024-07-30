@@ -6,6 +6,7 @@ const router: Router = express.Router()
 
 router.post('/login', asyncHandler(controller.login))
 router.post('/register', asyncHandler(controller.register))
-router.post('/deleteUser', asyncHandler(controller.deleteUser))
+router.post('/delete', asyncHandler(controller.deleteUser))
+router.get('/list', asyncHandler(controller.getAllUsers))
 
 export default router

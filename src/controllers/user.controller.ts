@@ -28,3 +28,8 @@ export const register = async (req: Request, res: Response) => {
   )
   res.json(toSuccessResponse(result))
 }
+
+export const getAllUsers = async (req: Request, res: Response) => {
+  const users = userService.getAllUsers()
+  res.json(toSuccessResponse(users))
+}

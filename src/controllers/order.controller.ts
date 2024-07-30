@@ -14,3 +14,13 @@ export const deleteOrder = async (req: Request, res: Response) => {
   await orderService.deleteOrder(body.ordernumber)
   res.json(toSuccessResponse())
 }
+export const getAllOrders = async (req: Request, res: Response) => {
+  const users = orderService.getAllOrders()
+  res.json(toSuccessResponse(users))
+}
+
+export const getOrdersByUID = async (req: Request, res: Response) => {
+  const { uid } = req.params
+  const order = orderService.getOrdersByUID(uid)
+  res.json(toSuccessResponse(order))
+}

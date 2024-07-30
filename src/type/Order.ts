@@ -1,7 +1,7 @@
 import { Product } from '../type/Product'
 
 export interface Order extends Product {
-  orderid: string
+  uid: string
   ordernumber: number
   products: Product[]
 }

@@ -12,8 +12,10 @@ const loadData = () => {
     const loadedData = readJSONFile(userDataPath)
     if (!loadedData || !loadedData.Users) {
       data = { Users: [] }
+      console.log('Data is not loaded')
     } else {
       data = loadedData
+      console.log('Data is loaded')
     }
   } catch (err) {
     console.error(`Error loading data: ${err}`)
@@ -132,4 +134,9 @@ const checkUserExisting = (username: string): boolean => {
   return data.Users.some(
     (user) => user.email.toLowerCase() === username.toLowerCase(),
   )
+}
+
+export const getAllUsers = () => {
+  loadData()
+  return data.Users
 }
