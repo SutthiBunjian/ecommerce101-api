@@ -1,13 +1,1 @@
-{
-  "Users": [
-    {
-      "firstName": "Admin_Firstname",
-      "lastName": "Admin_Lastname",
-      "email": "admin",
-      "dateOfBirth": "2000-02-19",
-      "password": "12345",
-      "address": "Admin_address",
-      "uid": "0"
-    }
-  ]
-}
+{"Users":[{"firstName":"Admin_Firstname","lastName":"Admin_Lastname","email":"admin","dateOfBirth":"2000-02-19","password":"12345","address":"Admin_address","uid":"1"},{"firstName":"Thidarat","lastName":"Machareon","email":"ice","dateOfBirth":"2000-02-19","password":"12345","address":"Begonia 1801 Cheung sha wan","uid":"2"},{"firstName":"testing","lastName":"one","email":"test2@gmail.com","dateOfBirth":"1999-09-21","password":"12345","address":"sdikns","uid":"b2cd748b-0293-48a4-a290-94281a977c5f"}]}
