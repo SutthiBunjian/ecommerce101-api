@@ -1,0 +1,13 @@
+{
+  "Users": [
+    {
+      "firstName": "Admin_Firstname",
+      "lastName": "Admin_Lastname",
+      "email": "admin",
+      "dateOfBirth": "2000-02-19",
+      "password": "12345",
+      "address": "Admin_address",
+      "uid": "0"
+    }
+  ]
+}
